@@ -1,0 +1,127 @@
+:root {
+    --gray-color1: rgb(230, 230, 230);
+    --gray-color2: rgb(126, 126, 126);
+    --main-blue-color: rgb(31, 94, 212);
+    --second-blue-color: rgb(58, 137, 173);
+    --background-white: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--gray-color1);
+}
+
+.form-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 3rem 0;
+}
+.iconify1 {
+    background-color: var(--main-blue-color);
+}
+
+h1 {
+    color: var(--main-blue-color);
+}
+.input-wrapper {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    grid-template-columns: 90% 10%;
+    background-color: white;
+}
+.input-wrapper input {
+    outline: none;
+}
+.submit-btn input[type='submit'] {
+    color: white;
+    background-color: var(--main-blue-color);
+}
+input[type='checkbox'] {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+#editBtn {
+    color: var(--second-blue-color);
+}
+.binBtn {
+    color: red;
+}
+@keyframes shake {
+    0% {
+        margin-left: 0rem;
+    }
+
+    25% {
+        margin-left: 0.7rem;
+    }
+
+    75% {
+        margin-left: -0.7rem;
+    }
+
+    100% {
+        margin-left: 0rem;
+    }
+}
+.error-shake {
+    animation: shake 0.3s ease-in-out 0.3s 2;
+    box-shadow: 0 0 0.3em red;
+}
+input[type='checkbox']:checked+label {
+    text-decoration: line-through;
+}
+.description {
+    outline: none;
+    border-radius: 0.5rem;
+}
+.main-header {
+    background-color: var(--main-blue-color);
+}
+.main-navigation {
+    display: flex;
+    color: #f2f2f2;
+}
+.main-navigation li {
+    list-style: none;
+    margin: 0 1rem;
+    padding: 0.5rem;
+}
+.main-navigation a {
+    color: #f2f2f2;
+    padding: 0.5rem;
+    font-weight: 600;
+}
+.main-navigation li:hover a {
+    color: rgb(219 240 242);
+}
+.main-navigation li:hover {
+    color: rgb(219 240 242);
+}
+.active {
+    border-bottom: 5px solid rgb(212 224 248);
+}
+.card {
+    border-radius: 0.5rem;
+}
+.due-date{
+    border-radius: 0.5rem;
+}
+.toast{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+.spinner-container{
+    margin: 0 auto;
+}
+.spinner-border{
+    position: absolute;
+    margin: 0 auto;
+}
+.page-item{
+    cursor: pointer;
+}
