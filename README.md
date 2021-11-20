@@ -1,7 +1,7 @@
 # Todo-List
-- If you want to have a online todo list this is best choice for you!
-- Check your list to do in every where and every time
-- set due time and write a description to desribe what should you do!
+- If you want to have an online todo list this is the best choice for you!
+- Check your list to do everywhere and every time
+- set due time and write a description to describe what should you do!
 - Check, edit and delete them when you want. Don't worry it'll be saved your time automatically
 
 ## Features
