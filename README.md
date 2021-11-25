@@ -13,4 +13,4 @@
 - [x] Set description for todo
 
 ## Updates
-- Pagination
+- Pagination buttons
