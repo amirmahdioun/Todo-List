@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav>
+            <ul class="main-navigation">
+                <li class="active"><a href="./home.html">Home</a></li>
+                <li><a href="./todos.html">Todos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="hstack mt-4">
+
+            <!-- Heading & Icon -->
+            <div class="t-header hstack flex-row my-1">
+                <span class="iconify iconify1 mx-3 rounded-1 text-white fs-2" data-icon="uil:check"></span>
+                <h1 class="text-decoration-underline">My TODO LIST</h1>
+            </div>
+            <!-- End of heading & icon -->
+
+            <!-- Start form -->
+            <label class="w-75 m-0 fw-bold" for="input-field">Title <span style="color: red;">*</span></label>
+            <form class="input-wrapper  d-grid w-75 ">
+                <input class="p-1 border-0" maxlength="40" type="text" name="input-field" id="input-field"
+                    placeholder="Add title here ..." autocomplete="off" autofocus>
+            </form>
+
+            <!-- Start Error -->
+            <div class="fs-7 text-danger fw-bold w-75" id="empty-error"></div>
+            <!-- End of error -->
+
+            <hr class="w-75">
+            <label class="w-75 m-0 fw-bold" for="description">Description</label>
+            <textarea name="" id="description" class="description w-75 p-4 border-0" rows="5" style="resize: none;"
+                placeholder="Add description here ..."></textarea>
+            <!-- <div class="items flex-column w-75"></div> -->
+            <label class="w-75 mt-2 fw-bold" for="due-date">Due date <span style="color: red;">*</span></label>
+            <input type="date" class="due-date p-1 border-0 w-75 p-4 border-0 mt-1" id="due-date" name="due-date"
+                required>
+            <!-- End of input form -->
+            <!-- Start Error -->
+            <div class="fs-7 text-danger mt-3 fw-bold w-75" id="empty-error-tow"></div>
+            <!-- End of error -->
+
+            <!-- Buttons -->
+            <div class="submit-btn w-75 mt-2">
+                <input class="border-0 w-100 p-1 fs-5 rounded-3 d-block" type="submit" id="addInput" value="ADD"
+                    onclick="serverAddData()">
+                <input class="d-none border-0 w-100 p-1 fs-5 rounded-3" type="submit" id="editInput" value="Save"
+                    onclick="submitEditOne()">
+            </div>
+            <!-- End of buttons -->
+
+            <!-- Add Toast -->
+            <div class="toast-container">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+    <script src="./js/Lastversion/home.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
